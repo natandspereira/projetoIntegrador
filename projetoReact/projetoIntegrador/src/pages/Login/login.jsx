@@ -1,13 +1,15 @@
 import logo from "../../assets/img/logo.jpg"
-
 import { 
     Container, 
     DivLogin,
     Input,
     Label,
     BtnLogin,
-    Img,
-    H3
+    H3,
+    P,
+    DivHeaderLogin,
+    ImgLogo,
+    DivCorVerde
     
 } from "./style"
 
@@ -16,9 +18,14 @@ import {
 
 function PageLogin(){
     return(
+    <> 
+         <DivHeaderLogin>
+                <ImgLogo src={logo} alt=""/>
+        </DivHeaderLogin>
+        
         <Container>
             <DivLogin> 
-                <Img src={logo} alt="logo"/>
+                
                 <Label> 
                     <H3>Nome</H3>
                     <Input type="text"  placeholder="Nome" />
@@ -28,10 +35,13 @@ function PageLogin(){
                     <H3>Senha</H3>
                     <Input type="text" placeholder="Senha"/>
                </Label>
-
-               <BtnLogin>Login</BtnLogin>
+                <P>Esqueci a senha</P>
+               <BtnLogin>Entrar</BtnLogin>
             </DivLogin>
         </Container>
+
+        <DivCorVerde></DivCorVerde>
+    </>
     )
 }
 

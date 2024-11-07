@@ -6,4 +6,5 @@ export const Container = styled.div`
     width:100%;
     bottom:0;
     color:white;
+    text-align:center;
 `
